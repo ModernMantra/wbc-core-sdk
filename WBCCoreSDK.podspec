@@ -8,12 +8,13 @@ Pod::Spec.new do |spec|
   spec.summary =                "Networking"
   spec.ios.deployment_target =  "12.0"
   spec.description  = "Swift Framework which encapsulates logic regarding network layer for WBC app"
-  spec.homepage     = "https://github.com/SemonnomeS/WBCCoreSDK"
+  spec.homepage     = "https://github.com/ModernMantra/wbc-core-sdk.git"
   spec.license      = "MIT"
   spec.author       = { "SemonnomeS" => "vedad.njuhovic@hotmail.com" }
   spec.source       = { :git => "https://github.com/SemonnomeS/WBCCoreSDK.git", :tag => "#{spec.version}" }
   spec.source_files  = "WBCCoreSDK/**/*.{swift}"
   spec.exclude_files = "WBCCoreSDKTests/**/*.{swift}"
+  spec.swift_version = "4.2"
   spec .dependency 'Alamofire'
 
 end
