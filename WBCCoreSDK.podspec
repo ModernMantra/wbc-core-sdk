@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/ModernMantra/wbc-core-sdk.git"
   spec.license      = "MIT"
   spec.author       = { "SemonnomeS" => "vedad.njuhovic@hotmail.com" }
-  spec.source       = { :git => "https://github.com/SemonnomeS/WBCCoreSDK.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/ModernMantra/wbc-core-sdk.git", :tag => "#{spec.version}" }
   spec.source_files  = "WBCCoreSDK/**/*.{swift}"
   spec.exclude_files = "WBCCoreSDKTests/**/*.{swift}"
   spec.swift_version = "4.2"
