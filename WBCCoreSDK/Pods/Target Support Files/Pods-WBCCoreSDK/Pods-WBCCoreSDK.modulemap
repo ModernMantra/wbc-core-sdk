@@ -1,0 +1,6 @@
+framework module Pods_WBCCoreSDK {
+  umbrella header "Pods-WBCCoreSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
