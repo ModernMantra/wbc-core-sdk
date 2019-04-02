@@ -9,3 +9,8 @@ target 'WBCCoreSDK' do
   pod 'Alamofire'
 
 end
+
+target 'WBCCoreSDKTests' do
+  use_frameworks!
+  pod 'Alamofire'
+end

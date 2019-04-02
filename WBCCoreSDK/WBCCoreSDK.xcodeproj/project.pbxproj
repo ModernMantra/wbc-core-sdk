@@ -7,30 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5209ACD965A994B3982C46DA /* Pods_WBCCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C336943B8DEF8D9EECB29A0 /* Pods_WBCCoreSDK.framework */; };
+		3AE060FFC5D3867804E658D9 /* Pods_WBCCoreSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2398B400BF6D5E729C7822 /* Pods_WBCCoreSDKTests.framework */; };
+		75F105EDFC07F8001460C3BC /* Pods_WBCCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D044668F2B44B7CF9E67F5 /* Pods_WBCCoreSDK.framework */; };
+		78659C372251E47900F7EA42 /* UserEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C362251E47900F7EA42 /* UserEndPoints.swift */; };
+		78659C392251E4A100F7EA42 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C382251E4A100F7EA42 /* Network.swift */; };
+		78659C3F22522E6F00F7EA42 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C3E22522E6F00F7EA42 /* Endpoint.swift */; };
+		78659C482252304600F7EA42 /* WBCCoreSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C472252304600F7EA42 /* WBCCoreSDKTests.swift */; };
+		78659C4A2252304600F7EA42 /* WBCCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F83E85224A2F64000877E0 /* WBCCoreSDK.framework */; };
+		78659C5122523B2000F7EA42 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C5022523B2000F7EA42 /* Enums.swift */; };
+		78659C53225240A000F7EA42 /* CityEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C52225240A000F7EA42 /* CityEndPoints.swift */; };
+		78659C55225240DE00F7EA42 /* CountryEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C54225240DE00F7EA42 /* CountryEndPoints.swift */; };
+		78659C5B225347D600F7EA42 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C5A225347D600F7EA42 /* BaseResponse.swift */; };
 		78F83E96224A2F65000877E0 /* WBCCoreSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F83E88224A2F64000877E0 /* WBCCoreSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		78F83EA3224A3491000877E0 /* DummyNetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F83EA2224A3491000877E0 /* DummyNetworkServiceTest.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		78659C4B2252304600F7EA42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78F83E7C224A2F64000877E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78F83E84224A2F64000877E0;
+			remoteInfo = WBCCoreSDK;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0B2398B400BF6D5E729C7822 /* Pods_WBCCoreSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBCCoreSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		118FBF68DB99043A2C68655A /* Pods-WBCCoreSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDK.release.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDK/Pods-WBCCoreSDK.release.xcconfig"; sourceTree = "<group>"; };
+		78659C362251E47900F7EA42 /* UserEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndPoints.swift; sourceTree = "<group>"; };
+		78659C382251E4A100F7EA42 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		78659C3E22522E6F00F7EA42 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		78659C452252304600F7EA42 /* WBCCoreSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBCCoreSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78659C472252304600F7EA42 /* WBCCoreSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBCCoreSDKTests.swift; sourceTree = "<group>"; };
+		78659C492252304600F7EA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78659C5022523B2000F7EA42 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		78659C52225240A000F7EA42 /* CityEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEndPoints.swift; sourceTree = "<group>"; };
+		78659C54225240DE00F7EA42 /* CountryEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryEndPoints.swift; sourceTree = "<group>"; };
+		78659C5A225347D600F7EA42 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		78F83E85224A2F64000877E0 /* WBCCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WBCCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F83E88224A2F64000877E0 /* WBCCoreSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBCCoreSDK.h; sourceTree = "<group>"; };
 		78F83E89224A2F64000877E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78F83EA2224A3491000877E0 /* DummyNetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyNetworkServiceTest.swift; sourceTree = "<group>"; };
-		7C336943B8DEF8D9EECB29A0 /* Pods_WBCCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBCCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93344B00FA0EEACE0ADC271E /* Pods_WBCCoreSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBCCoreSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A6B64C5872FDA87FE1B9C2F /* Pods-WBCCoreSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDK.debug.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDK/Pods-WBCCoreSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		CCA95CDA38DB4C21051B4AEE /* Pods-WBCCoreSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D094085282261CF16479CDC6 /* Pods-WBCCoreSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDKTests.release.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests.release.xcconfig"; sourceTree = "<group>"; };
-		D684960D2E33CEF083020571 /* Pods-WBCCoreSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDK.release.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDK/Pods-WBCCoreSDK.release.xcconfig"; sourceTree = "<group>"; };
+		90784B83A6A8606AE78A4C52 /* Pods-WBCCoreSDKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDKTests.debug.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A19E5B8394C836753E6C8420 /* Pods-WBCCoreSDKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDKTests.release.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7D044668F2B44B7CF9E67F5 /* Pods_WBCCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBCCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F46F01F3B98B9D4B2D6017AE /* Pods-WBCCoreSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDK.debug.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDK/Pods-WBCCoreSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		78659C422252304600F7EA42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78659C4A2252304600F7EA42 /* WBCCoreSDK.framework in Frameworks */,
+				3AE060FFC5D3867804E658D9 /* Pods_WBCCoreSDKTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78F83E82224A2F64000877E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5209ACD965A994B3982C46DA /* Pods_WBCCoreSDK.framework in Frameworks */,
+				75F105EDFC07F8001460C3BC /* Pods_WBCCoreSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,30 +77,77 @@
 		20D3968139A558B57B43511E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9A6B64C5872FDA87FE1B9C2F /* Pods-WBCCoreSDK.debug.xcconfig */,
-				D684960D2E33CEF083020571 /* Pods-WBCCoreSDK.release.xcconfig */,
-				CCA95CDA38DB4C21051B4AEE /* Pods-WBCCoreSDKTests.debug.xcconfig */,
-				D094085282261CF16479CDC6 /* Pods-WBCCoreSDKTests.release.xcconfig */,
+				F46F01F3B98B9D4B2D6017AE /* Pods-WBCCoreSDK.debug.xcconfig */,
+				118FBF68DB99043A2C68655A /* Pods-WBCCoreSDK.release.xcconfig */,
+				90784B83A6A8606AE78A4C52 /* Pods-WBCCoreSDKTests.debug.xcconfig */,
+				A19E5B8394C836753E6C8420 /* Pods-WBCCoreSDKTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		57BE4E7932ED79C6EA10EF3E /* Frameworks */ = {
+		78659C3A22520B2600F7EA42 /* EndPoints */ = {
 			isa = PBXGroup;
 			children = (
-				7C336943B8DEF8D9EECB29A0 /* Pods_WBCCoreSDK.framework */,
-				93344B00FA0EEACE0ADC271E /* Pods_WBCCoreSDKTests.framework */,
+				78659C3E22522E6F00F7EA42 /* Endpoint.swift */,
+				78659C362251E47900F7EA42 /* UserEndPoints.swift */,
+				78659C52225240A000F7EA42 /* CityEndPoints.swift */,
+				78659C54225240DE00F7EA42 /* CountryEndPoints.swift */,
 			);
-			name = Frameworks;
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		78659C3C22520B5200F7EA42 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78659C59225347C700F7EA42 /* Base Response */,
+				78659C562253438D00F7EA42 /* Error */,
+				78659C3D22522E5900F7EA42 /* Network */,
+				78659C3A22520B2600F7EA42 /* EndPoints */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		78659C3D22522E5900F7EA42 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				78659C382251E4A100F7EA42 /* Network.swift */,
+				78659C5022523B2000F7EA42 /* Enums.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		78659C462252304600F7EA42 /* WBCCoreSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				78659C472252304600F7EA42 /* WBCCoreSDKTests.swift */,
+				78659C492252304600F7EA42 /* Info.plist */,
+			);
+			path = WBCCoreSDKTests;
+			sourceTree = "<group>";
+		};
+		78659C562253438D00F7EA42 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		78659C59225347C700F7EA42 /* Base Response */ = {
+			isa = PBXGroup;
+			children = (
+				78659C5A225347D600F7EA42 /* BaseResponse.swift */,
+			);
+			path = "Base Response";
 			sourceTree = "<group>";
 		};
 		78F83E7B224A2F64000877E0 = {
 			isa = PBXGroup;
 			children = (
 				78F83E87224A2F64000877E0 /* WBCCoreSDK */,
+				78659C462252304600F7EA42 /* WBCCoreSDKTests */,
 				78F83E86224A2F64000877E0 /* Products */,
 				20D3968139A558B57B43511E /* Pods */,
-				57BE4E7932ED79C6EA10EF3E /* Frameworks */,
+				C420564A565CA227152F850D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				78F83E85224A2F64000877E0 /* WBCCoreSDK.framework */,
+				78659C452252304600F7EA42 /* WBCCoreSDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,35 +163,20 @@
 		78F83E87224A2F64000877E0 /* WBCCoreSDK */ = {
 			isa = PBXGroup;
 			children = (
-				78F83EA1224A343B000877E0 /* Mapping Models */,
-				78F83EA0224A3434000877E0 /* Parsers */,
-				78F83E9F224A3429000877E0 /* Network Services */,
 				78F83E88224A2F64000877E0 /* WBCCoreSDK.h */,
 				78F83E89224A2F64000877E0 /* Info.plist */,
+				78659C3C22520B5200F7EA42 /* Network */,
 			);
 			path = WBCCoreSDK;
 			sourceTree = "<group>";
 		};
-		78F83E9F224A3429000877E0 /* Network Services */ = {
+		C420564A565CA227152F850D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				78F83EA2224A3491000877E0 /* DummyNetworkServiceTest.swift */,
+				B7D044668F2B44B7CF9E67F5 /* Pods_WBCCoreSDK.framework */,
+				0B2398B400BF6D5E729C7822 /* Pods_WBCCoreSDKTests.framework */,
 			);
-			path = "Network Services";
-			sourceTree = "<group>";
-		};
-		78F83EA0224A3434000877E0 /* Parsers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Parsers;
-			sourceTree = "<group>";
-		};
-		78F83EA1224A343B000877E0 /* Mapping Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Mapping Models";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,11 +193,31 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		78659C442252304600F7EA42 /* WBCCoreSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78659C4D2252304600F7EA42 /* Build configuration list for PBXNativeTarget "WBCCoreSDKTests" */;
+			buildPhases = (
+				2E778E5DEC83D5D83C1EEEE1 /* [CP] Check Pods Manifest.lock */,
+				78659C412252304600F7EA42 /* Sources */,
+				78659C422252304600F7EA42 /* Frameworks */,
+				78659C432252304600F7EA42 /* Resources */,
+				590BF046B957A9A9103AB58D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78659C4C2252304600F7EA42 /* PBXTargetDependency */,
+			);
+			name = WBCCoreSDKTests;
+			productName = WBCCoreSDKTests;
+			productReference = 78659C452252304600F7EA42 /* WBCCoreSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		78F83E84224A2F64000877E0 /* WBCCoreSDK */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78F83E99224A2F65000877E0 /* Build configuration list for PBXNativeTarget "WBCCoreSDK" */;
 			buildPhases = (
-				5084FF80BC845D1E2CCD7225 /* [CP] Check Pods Manifest.lock */,
+				9E22759D542D2757F27CA558 /* [CP] Check Pods Manifest.lock */,
 				78F83E80224A2F64000877E0 /* Headers */,
 				78F83E81224A2F64000877E0 /* Sources */,
 				78F83E82224A2F64000877E0 /* Frameworks */,
@@ -152,6 +242,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "Waves Provider";
 				TargetAttributes = {
+					78659C442252304600F7EA42 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					78F83E84224A2F64000877E0 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
@@ -171,11 +264,19 @@
 			projectRoot = "";
 			targets = (
 				78F83E84224A2F64000877E0 /* WBCCoreSDK */,
+				78659C442252304600F7EA42 /* WBCCoreSDKTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		78659C432252304600F7EA42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78F83E83224A2F64000877E0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,7 +287,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5084FF80BC845D1E2CCD7225 /* [CP] Check Pods Manifest.lock */ = {
+		2E778E5DEC83D5D83C1EEEE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WBCCoreSDKTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		590BF046B957A9A9103AB58D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E22759D542D2757F27CA558 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,17 +356,77 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		78659C412252304600F7EA42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78659C482252304600F7EA42 /* WBCCoreSDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		78F83E81224A2F64000877E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78F83EA3224A3491000877E0 /* DummyNetworkServiceTest.swift in Sources */,
+				78659C372251E47900F7EA42 /* UserEndPoints.swift in Sources */,
+				78659C3F22522E6F00F7EA42 /* Endpoint.swift in Sources */,
+				78659C53225240A000F7EA42 /* CityEndPoints.swift in Sources */,
+				78659C5122523B2000F7EA42 /* Enums.swift in Sources */,
+				78659C392251E4A100F7EA42 /* Network.swift in Sources */,
+				78659C55225240DE00F7EA42 /* CountryEndPoints.swift in Sources */,
+				78659C5B225347D600F7EA42 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		78659C4C2252304600F7EA42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78F83E84224A2F64000877E0 /* WBCCoreSDK */;
+			targetProxy = 78659C4B2252304600F7EA42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		78659C4E2252304600F7EA42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90784B83A6A8606AE78A4C52 /* Pods-WBCCoreSDKTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BU6KAL7MDX;
+				INFOPLIST_FILE = WBCCoreSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wetek.WBCCoreSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78659C4F2252304600F7EA42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A19E5B8394C836753E6C8420 /* Pods-WBCCoreSDKTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BU6KAL7MDX;
+				INFOPLIST_FILE = WBCCoreSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wetek.WBCCoreSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		78F83E97224A2F65000877E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,7 +551,7 @@
 		};
 		78F83E9A224A2F65000877E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A6B64C5872FDA87FE1B9C2F /* Pods-WBCCoreSDK.debug.xcconfig */;
+			baseConfigurationReference = F46F01F3B98B9D4B2D6017AE /* Pods-WBCCoreSDK.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -375,7 +580,7 @@
 		};
 		78F83E9B224A2F65000877E0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D684960D2E33CEF083020571 /* Pods-WBCCoreSDK.release.xcconfig */;
+			baseConfigurationReference = 118FBF68DB99043A2C68655A /* Pods-WBCCoreSDK.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -403,6 +608,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		78659C4D2252304600F7EA42 /* Build configuration list for PBXNativeTarget "WBCCoreSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78659C4E2252304600F7EA42 /* Debug */,
+				78659C4F2252304600F7EA42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		78F83E7F224A2F64000877E0 /* Build configuration list for PBXProject "WBCCoreSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
