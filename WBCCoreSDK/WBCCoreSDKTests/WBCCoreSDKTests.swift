@@ -1,10 +1,3 @@
-//
-//  WBCCoreSDKTests.swift
-//  WBCCoreSDKTests
-//
-//  Created by Wetek on 01/04/2019.
-//  Copyright © 2019 Waves Provider. All rights reserved.
-//
 
 import XCTest
 @testable import WBCCoreSDK
@@ -33,11 +26,12 @@ class WBCCoreSDKTests: XCTestCase {
     
     func testLogin() {
         let expectation = XCTestExpectation(description: "Expect to pass login")
-        let test = Network()
-        let endpoint = UserEndpoints.login(username: "admin@wetek.com", password: "weteksss")
+        let test = Network<LoginResource>()
+      
+        let endpoint = UserEndpoints.login(username: "admin@wetek.com", password: "wetek")
         
-        test.sendRequest(endpoint: endpoint, completion: { () -> Void in
-            print("hello")
+        test.sendRequest(endpoint: endpoint, completion: { (error, result) in
+            print("")
             expectation.fulfill()
         })
         

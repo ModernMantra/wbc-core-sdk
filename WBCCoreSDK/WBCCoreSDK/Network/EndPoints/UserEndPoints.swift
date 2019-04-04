@@ -25,7 +25,7 @@ enum UserEndpoints {
 extension UserEndpoints: Endpoint {
 
     var baseURL: String {
-        return "http://wbcmanage-dev.wecast.tv/v1"
+        return "http://wbcadmin-dev.wecast.tv/v1"
     }
     
     // Set up the paths

@@ -7,10 +7,12 @@ target 'WBCCoreSDK' do
 
   # Pods for WBCCoreSDK
   pod 'Alamofire'
+  pod 'ObjectMapper'
 
 end
 
 target 'WBCCoreSDKTests' do
   use_frameworks!
   pod 'Alamofire'
+  pod 'ObjectMapper'
 end

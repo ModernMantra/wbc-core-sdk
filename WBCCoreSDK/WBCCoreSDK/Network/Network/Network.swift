@@ -8,11 +8,12 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 
-public struct Network {
+public struct Network<T: Mappable> {
     
     
-    public func sendRequest(endpoint: Endpoint, completion: @escaping () -> Void) {
+    public func sendRequest(endpoint: Endpoint, completion: @escaping (NetworkError?, T?) -> Void) {
         var httpMethod: Alamofire.HTTPMethod
         switch endpoint.method{
         case .get:
@@ -36,8 +37,8 @@ public struct Network {
         }
         
         Alamofire.request(endpoint.fullURL, method: httpMethod, parameters: endpoint.body, encoding: endpoint.encoding, headers: endpoint.headers).responseJSON { response in
-            print(response)
-            completion()
+            let networkError = NetworkError(code: response.response?.statusCode ?? -1)
+            let baseResponse = Mapper<BaseResponse<LoginResource>>().map(JSONObject: response.result.value)
         }
     }
 }

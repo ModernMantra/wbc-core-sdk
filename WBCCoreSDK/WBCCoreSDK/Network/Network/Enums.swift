@@ -20,7 +20,7 @@ public enum HTTPMethods: String {
     case connect = "CONNECT"
 }
 
-public typealias Parameters = [String: Any]
+public typealias Parameters = [String : Any]
 
-public typealias HTTPHeaders = [String: String]
+public typealias HTTPHeaders = [String : String]
 

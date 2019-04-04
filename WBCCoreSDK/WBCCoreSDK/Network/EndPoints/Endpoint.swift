@@ -30,7 +30,12 @@ public protocol Endpoint {
 public extension Endpoint {
     
     var encoding: ParameterEncoding {
-        return self.method == .get ? URLEncoding.default : JSONEncoding.default
+        if self.method == .get {
+            return URLEncoding.default
+        } else {
+            return JSONEncoding.default
+        }
+        
     }
     // Should always be the same no matter what
     var fullURL: String {

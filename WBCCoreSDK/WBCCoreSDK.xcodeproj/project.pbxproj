@@ -18,6 +18,8 @@
 		78659C53225240A000F7EA42 /* CityEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C52225240A000F7EA42 /* CityEndPoints.swift */; };
 		78659C55225240DE00F7EA42 /* CountryEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C54225240DE00F7EA42 /* CountryEndPoints.swift */; };
 		78659C5B225347D600F7EA42 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C5A225347D600F7EA42 /* BaseResponse.swift */; };
+		78659C5D22534C7600F7EA42 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C5C22534C7600F7EA42 /* NetworkError.swift */; };
+		78659C5F225398DC00F7EA42 /* LoginResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C5E225398DC00F7EA42 /* LoginResource.swift */; };
 		78F83E96224A2F65000877E0 /* WBCCoreSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 78F83E88224A2F64000877E0 /* WBCCoreSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		78659C52225240A000F7EA42 /* CityEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityEndPoints.swift; sourceTree = "<group>"; };
 		78659C54225240DE00F7EA42 /* CountryEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryEndPoints.swift; sourceTree = "<group>"; };
 		78659C5A225347D600F7EA42 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		78659C5C22534C7600F7EA42 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		78659C5E225398DC00F7EA42 /* LoginResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResource.swift; sourceTree = "<group>"; };
 		78F83E85224A2F64000877E0 /* WBCCoreSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WBCCoreSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F83E88224A2F64000877E0 /* WBCCoreSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBCCoreSDK.h; sourceTree = "<group>"; };
 		78F83E89224A2F64000877E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				78659C59225347C700F7EA42 /* Base Response */,
-				78659C562253438D00F7EA42 /* Error */,
+				78659C562253438D00F7EA42 /* NetworkError */,
 				78659C3D22522E5900F7EA42 /* Network */,
 				78659C3A22520B2600F7EA42 /* EndPoints */,
 			);
@@ -125,17 +129,19 @@
 			path = WBCCoreSDKTests;
 			sourceTree = "<group>";
 		};
-		78659C562253438D00F7EA42 /* Error */ = {
+		78659C562253438D00F7EA42 /* NetworkError */ = {
 			isa = PBXGroup;
 			children = (
+				78659C5C22534C7600F7EA42 /* NetworkError.swift */,
 			);
-			path = Error;
+			path = NetworkError;
 			sourceTree = "<group>";
 		};
 		78659C59225347C700F7EA42 /* Base Response */ = {
 			isa = PBXGroup;
 			children = (
 				78659C5A225347D600F7EA42 /* BaseResponse.swift */,
+				78659C5E225398DC00F7EA42 /* LoginResource.swift */,
 			);
 			path = "Base Response";
 			sourceTree = "<group>";
@@ -319,12 +325,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WBCCoreSDKTests/Pods-WBCCoreSDKTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -372,6 +380,8 @@
 				78659C3F22522E6F00F7EA42 /* Endpoint.swift in Sources */,
 				78659C53225240A000F7EA42 /* CityEndPoints.swift in Sources */,
 				78659C5122523B2000F7EA42 /* Enums.swift in Sources */,
+				78659C5D22534C7600F7EA42 /* NetworkError.swift in Sources */,
+				78659C5F225398DC00F7EA42 /* LoginResource.swift in Sources */,
 				78659C392251E4A100F7EA42 /* Network.swift in Sources */,
 				78659C55225240DE00F7EA42 /* CountryEndPoints.swift in Sources */,
 				78659C5B225347D600F7EA42 /* BaseResponse.swift in Sources */,
