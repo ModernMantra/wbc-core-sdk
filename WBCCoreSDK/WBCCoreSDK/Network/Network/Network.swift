@@ -38,7 +38,8 @@ public struct Network<T: Mappable> {
         
         Alamofire.request(endpoint.fullURL, method: httpMethod, parameters: endpoint.body, encoding: endpoint.encoding, headers: endpoint.headers).responseJSON { response in
             let networkError = NetworkError(code: response.response?.statusCode ?? -1)
-            let baseResponse = Mapper<BaseResponse<LoginResource>>().map(JSONObject: response.result.value)
+            let baseResponse = Mapper<BaseResponse<T>>().map(JSONObject: response.result.value)
+            completion(networkError, baseResponse?.resource)
         }
     }
 }

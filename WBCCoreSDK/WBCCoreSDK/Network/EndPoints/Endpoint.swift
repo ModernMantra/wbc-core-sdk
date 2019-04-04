@@ -37,6 +37,10 @@ public extension Endpoint {
         }
         
     }
+    var baseURL: String {
+        return "http://wbcmanage-dev.wecast.tv/v1"
+    }
+    
     // Should always be the same no matter what
     var fullURL: String {
         return baseURL + path

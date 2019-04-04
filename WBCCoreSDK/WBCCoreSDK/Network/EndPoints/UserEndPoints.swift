@@ -9,13 +9,14 @@
 import Foundation
 import Alamofire
 
+
 enum UserEndpoints {
     
     //Method for authentication (login)
     case login(username: String, password: String)
     
     //Method for logout
-    case logout(token: String)
+    case logout
     
     //Method for retrieving forgotten password
     case forgot(email: String)
@@ -24,23 +25,15 @@ enum UserEndpoints {
 
 extension UserEndpoints: Endpoint {
 
-    var baseURL: String {
-        return "http://wbcadmin-dev.wecast.tv/v1"
-    }
-    
     // Set up the paths
     var path: String {
         switch self {
         case .login(_, _):
             return "/auth/login"
-            
         case .logout:
             return "/auth/logout"
-            
         case .forgot:
             return "/auth/password/forgot"
-            
-        
         }
     }
     
@@ -55,8 +48,7 @@ extension UserEndpoints: Endpoint {
             return .put
         }
     }
-    
-    
+
     var headers: HTTPHeaders {
         switch self {
         case .login(let username, let password):
@@ -66,12 +58,16 @@ extension UserEndpoints: Endpoint {
             let header = "Basic \(base64LoginString)"
             return ["Authorization" : header]
         case .forgot(_):
-            return ["Content-Type" : "application/x-www-form-urlencoded"]
-        case .logout(let token):
-            return ["Authorization" : "Baerer \(token)"]
+            return [
+                "accept" : "application/json",
+                "Content-Type" : "application/x-www-form-urlencoded"
+            ]
+        case .logout:
+            return ["accept" : "application/json"]
         }
         
     }
+    
     var body: Parameters {
         var body: Parameters = Parameters()
         switch self {

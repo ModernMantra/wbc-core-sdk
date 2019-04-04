@@ -9,6 +9,20 @@
 /* Begin PBXBuildFile section */
 		3AE060FFC5D3867804E658D9 /* Pods_WBCCoreSDKTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2398B400BF6D5E729C7822 /* Pods_WBCCoreSDKTests.framework */; };
 		75F105EDFC07F8001460C3BC /* Pods_WBCCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D044668F2B44B7CF9E67F5 /* Pods_WBCCoreSDK.framework */; };
+		781185882255E70A00AD785F /* CitiesResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185872255E70A00AD785F /* CitiesResource.swift */; };
+		7811858A2255E80800AD785F /* CitiesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185892255E80800AD785F /* CitiesData.swift */; };
+		7811858C2255FB5F00AD785F /* CountryResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811858B2255FB5F00AD785F /* CountryResource.swift */; };
+		7811858E2255FCAB00AD785F /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811858D2255FCAB00AD785F /* CountryData.swift */; };
+		781185942256021900AD785F /* SystemUserEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185932256021900AD785F /* SystemUserEndPoints.swift */; };
+		781185962256026A00AD785F /* ActiveOperatorsEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185952256026A00AD785F /* ActiveOperatorsEndPoints.swift */; };
+		78118598225602CB00AD785F /* ActiveOperatorsAdminEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78118597225602CB00AD785F /* ActiveOperatorsAdminEndPoints.swift */; };
+		7811859A225603A200AD785F /* ActivityLogEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78118599225603A200AD785F /* ActivityLogEndPoints.swift */; };
+		7811859C2256375E00AD785F /* SystemUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811859B2256375E00AD785F /* SystemUserResource.swift */; };
+		7811859E2256377300AD785F /* SystemUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811859D2256377300AD785F /* SystemUserData.swift */; };
+		781185A022563E2700AD785F /* OperatorResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7811859F22563E2700AD785F /* OperatorResource.swift */; };
+		781185A222563E3300AD785F /* OperatorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185A122563E3300AD785F /* OperatorData.swift */; };
+		781185A42256437C00AD785F /* OperatorAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185A32256437C00AD785F /* OperatorAdmin.swift */; };
+		781185A62256439400AD785F /* OperatorAdminData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781185A52256439400AD785F /* OperatorAdminData.swift */; };
 		78659C372251E47900F7EA42 /* UserEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C362251E47900F7EA42 /* UserEndPoints.swift */; };
 		78659C392251E4A100F7EA42 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C382251E4A100F7EA42 /* Network.swift */; };
 		78659C3F22522E6F00F7EA42 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78659C3E22522E6F00F7EA42 /* Endpoint.swift */; };
@@ -36,6 +50,20 @@
 /* Begin PBXFileReference section */
 		0B2398B400BF6D5E729C7822 /* Pods_WBCCoreSDKTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBCCoreSDKTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		118FBF68DB99043A2C68655A /* Pods-WBCCoreSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBCCoreSDK.release.xcconfig"; path = "Target Support Files/Pods-WBCCoreSDK/Pods-WBCCoreSDK.release.xcconfig"; sourceTree = "<group>"; };
+		781185872255E70A00AD785F /* CitiesResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesResource.swift; sourceTree = "<group>"; };
+		781185892255E80800AD785F /* CitiesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesData.swift; sourceTree = "<group>"; };
+		7811858B2255FB5F00AD785F /* CountryResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryResource.swift; sourceTree = "<group>"; };
+		7811858D2255FCAB00AD785F /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		781185932256021900AD785F /* SystemUserEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUserEndPoints.swift; sourceTree = "<group>"; };
+		781185952256026A00AD785F /* ActiveOperatorsEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveOperatorsEndPoints.swift; sourceTree = "<group>"; };
+		78118597225602CB00AD785F /* ActiveOperatorsAdminEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveOperatorsAdminEndPoints.swift; sourceTree = "<group>"; };
+		78118599225603A200AD785F /* ActivityLogEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityLogEndPoints.swift; sourceTree = "<group>"; };
+		7811859B2256375E00AD785F /* SystemUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUserResource.swift; sourceTree = "<group>"; };
+		7811859D2256377300AD785F /* SystemUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemUserData.swift; sourceTree = "<group>"; };
+		7811859F22563E2700AD785F /* OperatorResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorResource.swift; sourceTree = "<group>"; };
+		781185A122563E3300AD785F /* OperatorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorData.swift; sourceTree = "<group>"; };
+		781185A32256437C00AD785F /* OperatorAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorAdmin.swift; sourceTree = "<group>"; };
+		781185A52256439400AD785F /* OperatorAdminData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorAdminData.swift; sourceTree = "<group>"; };
 		78659C362251E47900F7EA42 /* UserEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndPoints.swift; sourceTree = "<group>"; };
 		78659C382251E4A100F7EA42 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		78659C3E22522E6F00F7EA42 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -96,6 +124,10 @@
 				78659C362251E47900F7EA42 /* UserEndPoints.swift */,
 				78659C52225240A000F7EA42 /* CityEndPoints.swift */,
 				78659C54225240DE00F7EA42 /* CountryEndPoints.swift */,
+				781185932256021900AD785F /* SystemUserEndPoints.swift */,
+				781185952256026A00AD785F /* ActiveOperatorsEndPoints.swift */,
+				78118597225602CB00AD785F /* ActiveOperatorsAdminEndPoints.swift */,
+				78118599225603A200AD785F /* ActivityLogEndPoints.swift */,
 			);
 			path = EndPoints;
 			sourceTree = "<group>";
@@ -142,6 +174,16 @@
 			children = (
 				78659C5A225347D600F7EA42 /* BaseResponse.swift */,
 				78659C5E225398DC00F7EA42 /* LoginResource.swift */,
+				781185872255E70A00AD785F /* CitiesResource.swift */,
+				781185892255E80800AD785F /* CitiesData.swift */,
+				7811858B2255FB5F00AD785F /* CountryResource.swift */,
+				7811858D2255FCAB00AD785F /* CountryData.swift */,
+				7811859B2256375E00AD785F /* SystemUserResource.swift */,
+				7811859D2256377300AD785F /* SystemUserData.swift */,
+				7811859F22563E2700AD785F /* OperatorResource.swift */,
+				781185A122563E3300AD785F /* OperatorData.swift */,
+				781185A32256437C00AD785F /* OperatorAdmin.swift */,
+				781185A52256439400AD785F /* OperatorAdminData.swift */,
 			);
 			path = "Base Response";
 			sourceTree = "<group>";
@@ -377,14 +419,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				78659C372251E47900F7EA42 /* UserEndPoints.swift in Sources */,
+				7811858C2255FB5F00AD785F /* CountryResource.swift in Sources */,
 				78659C3F22522E6F00F7EA42 /* Endpoint.swift in Sources */,
+				781185A42256437C00AD785F /* OperatorAdmin.swift in Sources */,
 				78659C53225240A000F7EA42 /* CityEndPoints.swift in Sources */,
+				781185942256021900AD785F /* SystemUserEndPoints.swift in Sources */,
+				781185A62256439400AD785F /* OperatorAdminData.swift in Sources */,
+				781185A022563E2700AD785F /* OperatorResource.swift in Sources */,
 				78659C5122523B2000F7EA42 /* Enums.swift in Sources */,
+				7811859A225603A200AD785F /* ActivityLogEndPoints.swift in Sources */,
+				78118598225602CB00AD785F /* ActiveOperatorsAdminEndPoints.swift in Sources */,
 				78659C5D22534C7600F7EA42 /* NetworkError.swift in Sources */,
+				7811858E2255FCAB00AD785F /* CountryData.swift in Sources */,
+				7811859E2256377300AD785F /* SystemUserData.swift in Sources */,
 				78659C5F225398DC00F7EA42 /* LoginResource.swift in Sources */,
 				78659C392251E4A100F7EA42 /* Network.swift in Sources */,
 				78659C55225240DE00F7EA42 /* CountryEndPoints.swift in Sources */,
+				7811859C2256375E00AD785F /* SystemUserResource.swift in Sources */,
+				781185882255E70A00AD785F /* CitiesResource.swift in Sources */,
+				781185962256026A00AD785F /* ActiveOperatorsEndPoints.swift in Sources */,
+				781185A222563E3300AD785F /* OperatorData.swift in Sources */,
 				78659C5B225347D600F7EA42 /* BaseResponse.swift in Sources */,
+				7811858A2255E80800AD785F /* CitiesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

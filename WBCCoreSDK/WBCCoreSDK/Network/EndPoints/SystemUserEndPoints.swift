@@ -1,30 +1,25 @@
 //
-//  CityEndPoints.swift
+//  ActiveSystemUserEndPoint.swift
 //  WBCCoreSDK
 //
-//  Created by Wetek on 01/04/2019.
+//  Created by Wetek on 04/04/2019.
 //  Copyright © 2019 Waves Provider. All rights reserved.
 //
 
 import Foundation
 
 
-public enum CityEndPoints {
-    case cities(limit: Int?, order: String?, direction: String?)
-    case cityByID( id: String)
+public enum SystemUserEndPoint{
+    case systemUser(limit: Int?, order: String?, direction: String?)
+    case systemUserByID(id: String)
 }
 
-extension CityEndPoints: Endpoint {
-    
+extension SystemUserEndPoint: Endpoint {
     // Set up the paths
     public var path: String {
         switch self {
-        
-        case .cityByID(let id):
-            return "/cities/\(id)"
-        case .cities(let limit, let order, let direction):
-            var path: String = "/cities"
-            
+        case .systemUser(let limit, let order, let direction):
+            var path: String = "/system-users"
             if let limit = limit {
                 path = "?\(limit)"
             }
@@ -35,14 +30,16 @@ extension CityEndPoints: Endpoint {
                 path += "&direction=\(direction)"
             }
             return path
+        case .systemUserByID(let id):
+            return "/system-users/\(id)"
         }
     }
     
     // Set up the methods
     public var method: HTTPMethods {
         switch self {
-        case .cityByID(_),
-             .cities:
+        case .systemUser,
+             .systemUserByID(_):
             return .get
         }
     }
@@ -50,14 +47,16 @@ extension CityEndPoints: Endpoint {
     
     public var headers: HTTPHeaders {
         switch self {
-        case .cityByID(_),
-             .cities( _, _, _):
+        case .systemUser(_, _, _),
+             .systemUserByID(_):
             return ["accept" : "application/json"]
         }
     }
+    
     public var body: Parameters {
         var body: Parameters = Parameters()
         switch self {
+            
         default:
             break
         }
