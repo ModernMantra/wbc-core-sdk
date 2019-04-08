@@ -16,5 +16,6 @@ Pod::Spec.new do |spec|
   spec.exclude_files = "WBCCoreSDKTests/**/*.{swift}"
   spec.swift_version = "4.2"
   spec .dependency 'Alamofire'
+  spec .dependency 'ObjectMapper'
 
 end
