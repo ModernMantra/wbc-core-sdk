@@ -14,6 +14,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/ModernMantra/wbc-core-sdk.git", :tag => "#{spec.version}" }
   spec.source_files  = "WBCCoreSDK/**/*.{swift}"
   spec.exclude_files = "WBCCoreSDKTests/**/*.{swift}"
+  spec.public_header_files = 'WBCCoreSDK/*.h'
   spec.swift_version = "4.2"
   spec .dependency 'Alamofire'
   spec .dependency 'ObjectMapper'
