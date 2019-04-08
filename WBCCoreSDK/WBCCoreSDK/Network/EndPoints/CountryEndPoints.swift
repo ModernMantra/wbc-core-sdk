@@ -10,8 +10,8 @@ import Foundation
 
 
 public enum CountryEndPoints {
-    case countries( limit: Int?, order: String?, direction: String?)
-    case countryByID( id: String)
+    case countries(token: String, limit: Int?, order: String?, direction: String?)
+    case countryByID(token: String, id: String)
 }
 
 extension CountryEndPoints: Endpoint {
@@ -19,7 +19,7 @@ extension CountryEndPoints: Endpoint {
     // Set up the paths
     public var path: String {
         switch self {
-        case .countries( let limit, let order, let direction):
+        case .countries(_, let limit, let order, let direction):
             var path: String = "/countries"
             
             if let limit = limit {
@@ -49,9 +49,11 @@ extension CountryEndPoints: Endpoint {
     
     public var headers: HTTPHeaders {
         switch self {
-        case .countries(_, _, _),
-          .countryByID( _):
-           return ["accept" : "application/json"]
+        case .countries(let token,_, _, _),
+          .countryByID( let token, _):
+            return [ "accept" : "application/json",
+                     "Authorization" : "Bearer \(token)"
+            ]
         }
     }
     

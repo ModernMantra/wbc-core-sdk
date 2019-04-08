@@ -10,8 +10,8 @@ import Foundation
 
 
 public enum CityEndPoints {
-    case cities(limit: Int?, order: String?, direction: String?)
-    case cityByID( id: String)
+    case cities(token:String, limit: Int?, order: String?, direction: String?)
+    case cityByID(token: String, id: String)
 }
 
 extension CityEndPoints: Endpoint {
@@ -20,9 +20,9 @@ extension CityEndPoints: Endpoint {
     public var path: String {
         switch self {
         
-        case .cityByID(let id):
+        case .cityByID(_, let id):
             return "/cities/\(id)"
-        case .cities(let limit, let order, let direction):
+        case .cities(_, let limit, let order, let direction):
             var path: String = "/cities"
             
             if let limit = limit {
@@ -50,9 +50,12 @@ extension CityEndPoints: Endpoint {
     
     public var headers: HTTPHeaders {
         switch self {
-        case .cityByID(_),
-             .cities( _, _, _):
-            return ["accept" : "application/json"]
+        case .cityByID(let token,_),
+             .cities(let token, _, _, _):
+            return [
+                "accept" : "application/json",
+                "Authorization" : "Bearer \(token)"
+            ]
         }
     }
     public var body: Parameters {

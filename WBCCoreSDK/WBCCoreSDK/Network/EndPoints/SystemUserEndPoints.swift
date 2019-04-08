@@ -10,15 +10,15 @@ import Foundation
 
 
 public enum SystemUserEndPoint{
-    case systemUser(limit: Int?, order: String?, direction: String?)
-    case systemUserByID(id: String)
+    case systemUser(token: String, limit: Int?, order: String?, direction: String?)
+    case systemUserByID(token: String, id: String)
 }
 
 extension SystemUserEndPoint: Endpoint {
     // Set up the paths
     public var path: String {
         switch self {
-        case .systemUser(let limit, let order, let direction):
+        case .systemUser(_, let limit, let order, let direction):
             var path: String = "/system-users"
             if let limit = limit {
                 path = "?\(limit)"
@@ -47,9 +47,10 @@ extension SystemUserEndPoint: Endpoint {
     
     public var headers: HTTPHeaders {
         switch self {
-        case .systemUser(_, _, _),
-             .systemUserByID(_):
-            return ["accept" : "application/json"]
+        case .systemUser(let token, _, _, _),
+             .systemUserByID(let token, _):
+            return [ "accept" : "application/json",
+                     "Authorization" : "Bearer \(token)"]
         }
     }
     

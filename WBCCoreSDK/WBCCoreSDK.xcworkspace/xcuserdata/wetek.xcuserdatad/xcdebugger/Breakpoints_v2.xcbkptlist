@@ -2,4 +2,161 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WBCCoreSDKTests/WBCCoreSDKTests.swift"
+            timestampString = "576412757.659379"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "testLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WBCCoreSDKTests/WBCCoreSDKTests.swift"
+            timestampString = "576412757.660144"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "testLogin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WBCCoreSDKTests/WBCCoreSDKTests.swift"
+            timestampString = "576412757.660942"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5"
+            landmarkName = "WBCCoreSDKTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; WBCCoreSDKTests.WBCCoreSDKTests"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.230206"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; WBCCoreSDKTests.WBCCoreSDKTests"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.232427"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; WBCCoreSDKTests.WBCCoreSDKTests"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.235523"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.init(selector: ObjectiveC.Selector) -&gt; WBCCoreSDKTests.WBCCoreSDKTests"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.2383291"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.__allocating_init() -&gt; WBCCoreSDKTests.WBCCoreSDKTests"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.2407891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.init() -&gt; WBCCoreSDKTests.WBCCoreSDKTests"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.243894"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "5"
+                  endingLineNumber = "5"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WBCCoreSDKTests.WBCCoreSDKTests.__deallocating_deinit"
+                  moduleName = "WBCCoreSDKTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wetek/Documents/wbc-core-sdk/WBCCoreSDK/WBCCoreSDKTests/WBCCoreSDKTests.swift"
+                  timestampString = "576412763.246726"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -39,5 +39,60 @@ class WBCCoreSDKTests: XCTestCase {
     }
 
 
+    
+    func testCity() {
+        let expectationForLogin = XCTestExpectation(description: "Expect to pass login")
+        let expectationForcity  =  XCTestExpectation(description: "Expect to have valid token")
+        
+        let login = Network<LoginResource>()
+        
+        let endpointLogin = UserEndpoints.login(username: "admin@wetek.com", password: "wetek")
+        
+        login.sendRequest(endpoint: endpointLogin, completion: { (error, result) in
+            print("")
+            expectationForLogin.fulfill()
+            
+            let city = Network<CitiesResource>()
+            
+            let endpointCity = CityEndPoints.cities(token: (result?.access_token)!, limit: nil, order: nil, direction: nil)
+            
+            city.sendRequest(endpoint: endpointCity, completion: { (errorOfCity, resultOfCity) in
+                print("\(resultOfCity)")
+                expectationForcity.fulfill()
+            })
+            self.wait(for: [expectationForcity], timeout: 15)
+            
+        })
 
+        wait(for: [expectationForLogin], timeout: 10)
+    }
+
+    func testOperators() {
+        let expectationForLogin = XCTestExpectation(description: "Expect to pass login")
+        let expectationForcity  =  XCTestExpectation(description: "Expect to have valid token")
+        
+        let login = Network<LoginResource>()
+        
+        let endpointLogin = UserEndpoints.login(username: "admin@wetek.com", password: "wetek")
+        
+        login.sendRequest(endpoint: endpointLogin, completion: { (error, result) in
+            print("")
+            expectationForLogin.fulfill()
+            
+            let operators = Network<OperatorResource>()
+            
+            let endpointOperator = ActiveOperatorsEndPoint.operators(token: (result?.access_token)!, limit: nil, order: nil, direction: nil)
+            
+            operators.sendRequest(endpoint: endpointOperator, completion: { (errorOfOperator, resultOfOperator) in
+                print("\(resultOfOperator)")
+                expectationForcity.fulfill()
+            })
+            self.wait(for: [expectationForcity], timeout: 15)
+            
+        })
+        
+        wait(for: [expectationForLogin], timeout: 10)
+    }
+
+}
 

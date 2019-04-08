@@ -10,7 +10,7 @@ import Foundation
 
 
 public enum ActivityLogEndPoint{
-    case statisticsDashboard
+    case statisticsDashboard(token: String)
 }
 
 extension ActivityLogEndPoint: Endpoint {
@@ -32,8 +32,9 @@ extension ActivityLogEndPoint: Endpoint {
     
     public var headers: HTTPHeaders {
         switch self {
-        case .statisticsDashboard:
-            return ["accept" : "application/json"]
+        case .statisticsDashboard(let token):
+            return [ "accept" : "application/json",
+                     "Authorization" : "Bearer \(token)"]
         }
     }
     

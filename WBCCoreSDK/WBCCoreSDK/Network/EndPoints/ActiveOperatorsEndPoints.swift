@@ -10,15 +10,15 @@ import Foundation
 
 
 public enum ActiveOperatorsEndPoint{
-    case operators(limit: Int?, order: String?, direction: String?)
-    case operatorsByID(id: String)
+    case operators(token: String, limit: Int?, order: String?, direction: String?)
+    case operatorsByID(token: String, id: String)
 }
 
 extension ActiveOperatorsEndPoint: Endpoint {
     // Set up the paths
     public var path: String {
         switch self {
-        case .operators(let limit, let order, let direction):
+        case .operators(_, let limit, let order, let direction):
             var path: String = "/operators"
             
             if let limit = limit {
@@ -48,9 +48,10 @@ extension ActiveOperatorsEndPoint: Endpoint {
     
     public var headers: HTTPHeaders {
         switch self {
-        case .operators( _, _, _),
-             .operatorsByID(_):
-            return ["accept" : "application/json"]
+        case .operators(let token, _, _, _),
+             .operatorsByID(let token, _):
+            return [ "accept" : "application/json",
+                     "Authorization" : "Bearer \(token)"]
         }
     }
     public var body: Parameters {

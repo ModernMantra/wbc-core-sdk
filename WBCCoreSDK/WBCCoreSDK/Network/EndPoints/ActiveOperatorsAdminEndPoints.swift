@@ -10,15 +10,15 @@ import Foundation
 
 
 public enum ActiveOperatorsAdminEndPoint{
-    case operatorsAdmin(limit: Int?, order: String?, direction: String?)
-    case operatorsAdminByID(id: String)
+    case operatorsAdmin(token: String, limit: Int?, order: String?, direction: String?)
+    case operatorsAdminByID(token: String, id: String)
 }
 
 extension ActiveOperatorsAdminEndPoint: Endpoint {
     // Set up the paths
     public var path: String {
         switch self {
-        case .operatorsAdmin(let limit, let order, let direction):
+        case .operatorsAdmin(_,let limit, let order, let direction):
             var path: String = "/operator-administrators"
             if let limit = limit {
                 path = "?\(limit)"
@@ -48,9 +48,10 @@ extension ActiveOperatorsAdminEndPoint: Endpoint {
     public var headers: HTTPHeaders {
         switch self {
             
-        case .operatorsAdmin(_, _, _),
-             .operatorsAdminByID(_):
-            return ["accept" : "application/json"]
+        case .operatorsAdmin(let token, _, _, _),
+             .operatorsAdminByID(let token, _):
+            return [ "accept" : "application/json",
+                     "Authorization" : "Bearer \(token)"]
         }
         
     }
