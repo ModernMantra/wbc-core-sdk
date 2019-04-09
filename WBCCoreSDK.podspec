@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   spec.source_files  = "WBCCoreSDK/**/*.{swift}"
   spec.public_header_files = 'WBCCoreSDK/*.h'
   spec.swift_version = "4.2"
-  spec .dependency 'Alamofire'
-  spec .dependency 'ObjectMapper'
+  spec.dependency 'Alamofire'
+  spec.dependency 'ObjectMapper'
 
 end
